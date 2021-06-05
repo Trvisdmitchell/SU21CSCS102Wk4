@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--UAT Spage Page
+    written by: Travis Mitchell
+    tramitc1@uat.edu
+    11May2021-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <!--Link to attache the styles.css file to change the background.-->
+    <script src="code.js"></script>
+    <title>
+        Travis Mitchell UAT Space Page
+        <!--Title of web page.-->
+    </title>
+</head>
+
+<body>
+    <!-- Making a tableto hold h1 and title and jpg-->
+    <table>
+        <td>
+            <img src="UATSpace- logo.png">
+            <!--UAT space logo image -->
+        </td>
+        <td>
+            <h1 class="h1">
+                -UAT Space Program-
+                <!--Header for webpage-->
+            </h1>
+        </td>
+    </table>
+    <table border="2" width="55%">
+        <!--table for our data/our border and takes up 55% of page width-->
+        <col style="width: 35%;">
+        <!--sets column width-->
+        <col style="width: 35%;">
+        <!--sets column width-->
+        <thead>
+            <tr style="font-family: fantasy;">
+                <!--Font change-->
+                <th>Data Type</th>
+                <th>Reading</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="seconds">
+                <!--id for data-->
+                <td>Time Elapsed:</td>
+                <!--Name for data-->
+                <td> 15 Seconds</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Latitude">
+                <!--id for data-->
+                <td>Latitude:</td>
+                <!--Name for data-->
+                <td>0</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Longitude">
+                <!--id for data-->
+                <td>Longitude:</td>
+                <!--Name for data-->
+                <td>0</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="GPS_Altitude">
+                <!--id for data-->
+                <td>GPS Altitude:</td>
+                <!--Name for data-->
+                <td>0</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="BMP_sensor_Altitude">
+                <!--id for data-->
+                <td>BMP sensor Altitude:</td>
+                <!--Name for data-->
+                <td>30383.04</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="BMP_Sensor_pressure">
+                <!--id for data-->
+                <td>BMP Sensor pressure:</td>
+                <!--Name for data-->
+                <td>2.34</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="BMP_Sensor_Temperature">
+                <!--id for data-->
+                <td>BMP Sensor Temperature:</td>
+                <!--Name for data-->
+                <td>0</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Digital_Sensor_Trmperature">
+                <!--id for data-->
+                <td>Digital Sensor Trmperature: </td>
+                <!--Name for data-->
+                <td>24.12</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="CSS_Sensor_Temprature">
+                <!--id for data-->
+                <td>CSS Sensor Temprature:</td>
+                <!--Name for data-->
+                <td>25</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="CSS_Sensor_eC02">
+                <!--id for data-->
+                <td>CSS Sensor eC02:</td>
+                <!--Name for data-->
+                <td>400</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="CSS_Sensor_TVOC">
+                <!--id for data-->
+                <td>CSS Sensor TVOC:</td>
+                <!--Name for data-->
+                <td>0</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="UV">
+                <!--id for data-->
+                <td>UV:</td>
+                <!--Name for data-->
+                <td>0</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Accel_X">
+                <!--id for data-->
+                <td>Accel X:</td>
+                <!--Name for data-->
+                <td>-0.87</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Accel_Y">
+                <!--id for data-->
+                <td>Accel Y:</td>
+                <!--Name for data-->
+                <td>-0.02</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Accel_Z">
+                <!--id for data-->
+                <td>Accel Z:</td>
+                <!--Name for data-->
+                <td>9.61</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Magnetic_X">
+                <!--id for data-->
+                <td>Magnetic X:</td>
+                <!--Name for data-->
+                <td>0.13</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Magnetic_Y">
+                <!--id for data-->
+                <td>Magnetic Y:</td>
+                <!--Name for data-->
+                <td>0.57</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Magnetic_Z">
+                <!--id for data-->
+                <td>Magnetic Z:</td>
+                <!--Name for data-->
+                <td>-0.24</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Gyro_X">
+                <!--id for data-->
+                <td>Gyro X:</td>
+                <!--Name for data-->
+                <td>4.66</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Gyro_Y">
+                <!--id for data-->
+                <td>Gyro Y:</td>
+                <!--Name for data-->
+                <td>0.01</td>
+                <!--Data for table-->
+            </tr>
+            <tr id="Gyro_Z">
+                <!--id for data-->
+                <td>Gyro Z:</td>
+                <!--Name for data-->
+                <td>-0.4</td>
+                <!--Data for table-->
+            </tr>
+
+        </tbody>
+
+
+    </table>
+
+
+
+    <script>
+        //Cool javascrip stuff happens between the <scrips>
+    </script>
+
+    <br>
+    <!--Used to skip a line on web page-->
+    <p id="CountdownTimer">Countdown Status....</p>
+    <button class="button" id="startButton" onclick="Start();">Start</button>
+    <!--Start button on web page, wil run the code "code.js" when pressed-->
+    <button class="button" id="stopButton" onclick="Stop();">Stop</button>
+    <!--Stop button on web page-->
+    <br>
+    <br>
+    <button class="button" onclick="playstation();">Play Sound</button><br><!--button to play mp3 file-->
+
+    <script>
+        //we do not need alert anymore.
+        //alert("ALERT!!! This is a Test of the alert function.");
+        //alert that will first pop up when you open the page
+    </script>
+
+    <!--Space for craps game.-->
+    <br>
+    <!--Used to skip a line on web page-->
+    <br>
+
+    <h2>-Space Craps-</h2>
+    <br>
+    <p1>Welcome to Space Craps!! Our mission is to provide you with a fun way to lose your money in a classic game of
+        chance by playing Craps.<br>
+        If you never played before, don't worry. I Will walk you through it. All you have to do is press the button that
+        says Play Craps. It will then roll two dice. <br>
+        If you get an even pair of numbers, you win. If you get a 7 or 11, you lose. If you get anything in between, it
+        will ask you to roll again.<br>
+        It's that easy.
+        <br>With your losses, there is no telling what mysteries we will uncover about our universe. <br>
+        So please don't hesitate to spend your life savings and show your support for the search for knowledge here at
+        <br>"Space Craps."
+    </p1>
+    <br>
+    <br>
+    <p>----------------------------------------------------------------------------------------------------------------
+    </p>
+    <div id="Die1Results">Die One ...</div> <br>
+    <!--Shows Results for Die one on Web Page.-->
+    <div id="Die2Results">Die Two ...</div> <br>
+    <!--Shows Rusults for Die Two on Web Page.-->
+    <div id="SumResults">Sum of Die...</div> <br>
+    <!--Show the Sum of Die one & Two on web Page.-->
+    <div id="CrapsResults">Space Craps Game Status...</div>
+    <p>----------------------------------------------------------------------------------------------------------------
+    </p>
+    <button class="button" onclick="PlayCraps();">Play Craps</button>
+    <!--Button to start craps game on webpage-->
+    <br>
+    <br>
+    <br>
+    <p>--------------------------------------------------------------------------------------------------------------------
+    </p>
+    <div id="SandRes"> sandbox output</div><br>
+    <button onclick="SandboxTest();">SandboxTest</button>
+
+</body>
+
+</html>
